@@ -1,0 +1,31 @@
+INSERT INTO categories (name) VALUES
+('Mobile Phones'),
+('Laptops'),
+('Headphones'),
+('Chargers');
+
+INSERT INTO products (name, price, description, category_id) VALUES
+('iPhone 15 Pro', 82917.00, 'Latest Apple iPhone with A17 Bionic chip and advanced camera system.', 1),
+('Samsung Galaxy S23', 74617.00, 'High-end Samsung smartphone with AMOLED display and long battery life.', 1),
+('Google Pixel 8', 66217.00, 'Google Pixel phone with pure Android experience and AI camera features.', 1),
+('OnePlus 12', 62317.00, 'Fast and sleek smartphone with 120Hz display and excellent performance.', 1),
+('MacBook Pro 16"', 207417.00, 'Apple MacBook Pro with M2 Pro chip, high performance for creators.', 2),
+('Dell XPS 13', 107817.00, 'Compact and powerful laptop with InfinityEdge display.', 2),
+('HP Spectre x360', 115817.00, 'Convertible laptop with touchscreen and premium design.', 2),
+('Lenovo ThinkPad X1 Carbon', 124317.00, 'Business laptop with durability and high performance.', 2),
+('Sony WH-1000XM5', 28967.00, 'Top-tier noise-canceling wireless headphones.', 3),
+('Bose QuietComfort 45', 27307.00, 'Comfortable headphones with excellent sound quality.', 3),
+('Apple AirPods Pro 2', 20717.00, 'Wireless earbuds with active noise cancellation.', 3),
+('Sennheiser HD 560S', 16567.00, 'High fidelity wired headphones for audiophiles.', 3),
+('Anker 65W USB-C Charger', 3317.00, 'Fast charging USB-C charger for multiple devices.', 4),
+('Apple 30W USB-C Charger', 4087.00, 'Official Apple charger for iPhone and iPad.', 4),
+('Samsung 45W Super Fast Charger', 4957.00, 'Samsung fast charger compatible with Galaxy devices.', 4),
+('Belkin Wireless Charger', 2427.00, 'Qi-certified wireless charging pad for smartphones.', 4),
+('Xiaomi 120W HyperCharge', 5727.00, 'Ultra-fast charger for Xiaomi smartphones.', 4),
+('Dell 90W USB-C Laptop Charger', 6557.00, 'Official Dell charger for laptops with USB-C.', 4),
+('HP 65W USB-C Laptop Charger', 5727.00, 'Official HP laptop charger for modern devices.', 4),
+('OnePlus 80W Warp Charger', 4087.00, 'OnePlus fast charger for compatible smartphones.', 4),
+('Asus ROG Zephyrus G14', 124570.00, 'Powerful gaming laptop with AMD Ryzen 9 and RTX 4060 GPU.', 2),
+('Acer Swift 5', 86990.00, 'Lightweight laptop with long battery life and touchscreen display.', 2),
+('Microsoft Surface Laptop 5', 113890.00, 'Sleek 2-in-1 laptop with PixelSense touchscreen display.', 2),
+('Razer Blade 15', 199070.00, 'High-performance gaming laptop with Intel i7 CPU and RTX 4070 GPU.', 2);
