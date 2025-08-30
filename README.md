@@ -1,9 +1,3 @@
-Perfect 👍 — I’ve fully updated your `README.md` so it mirrors the Employee Management System style, **with proper placeholders for screenshots under each endpoint and key sections**.
-
-Here’s the complete version you can use:
-
----
-
 # 🛒 E-Commerce Backend - Spring Boot, Java, MySQL, Hibernate, JPA, JWT, Stripe
 
 ## 📚 Contents
