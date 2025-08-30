@@ -9,6 +9,7 @@ import com.anubhav.dev.store.mappers.OrderMapper;
 import com.anubhav.dev.store.repositories.OrderRepository;
 import com.anubhav.dev.store.services.AuthService;
 import com.anubhav.dev.store.services.OrderService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import java.nio.file.AccessDeniedException;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -23,6 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/orders")
 @AllArgsConstructor
+@Tag(name = "Orders")
 public class OrderController {
 
   private final OrderService orderService;

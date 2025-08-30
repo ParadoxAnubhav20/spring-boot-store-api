@@ -8,6 +8,7 @@ import com.anubhav.dev.store.entities.Role;
 import com.anubhav.dev.store.entities.User;
 import com.anubhav.dev.store.mappers.UserMapper;
 import com.anubhav.dev.store.repositories.UserRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
@@ -25,6 +26,7 @@ import java.util.Set;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/users")
+@Tag(name = "Users")
 public class UserController {
 
   private final UserRepository userRepository;
@@ -49,7 +51,6 @@ public class UserController {
     return ResponseEntity.ok(userMapper.toDto(user));
   }
 
-  //MethodArgumentNotValidException - if POST Reqeust argument is not valid
   @PostMapping
   public ResponseEntity<?> registerUser(@Valid @RequestBody RegisterUserRequest registerUserRequest,
       UriComponentsBuilder uriComponentsBuilder) {

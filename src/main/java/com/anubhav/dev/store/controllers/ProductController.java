@@ -1,5 +1,6 @@
 package com.anubhav.dev.store.controllers;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import java.net.URI;
 import java.util.*;
 
@@ -17,6 +18,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/products")
+@Tag(name = "Products")
 public class ProductController {
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;

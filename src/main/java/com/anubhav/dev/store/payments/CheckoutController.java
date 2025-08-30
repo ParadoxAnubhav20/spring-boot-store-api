@@ -5,6 +5,7 @@ import com.anubhav.dev.store.dtos.ErrorDto;
 import com.anubhav.dev.store.exceptions.CartEmptyException;
 import com.anubhav.dev.store.exceptions.CartNotFoundException;
 import com.anubhav.dev.store.repositories.OrderRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import java.util.Map;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/checkout")
 @RequiredArgsConstructor
+@Tag(name = "Checkout")
 public class CheckoutController {
 
   private final CheckoutService checkoutService;

@@ -29,7 +29,6 @@ public class CartController {
   private final CartService cartService;
 
   @PostMapping
-  @Operation(summary = "Create a new cart")
   public ResponseEntity<CartDto> createCart(UriComponentsBuilder uriBuilder) {
     CartDto cartDto = cartService.createCart();
     URI uri = uriBuilder.path("/carts/{id}").buildAndExpand(cartDto.getId()).toUri();
@@ -37,7 +36,6 @@ public class CartController {
   }
 
   @PostMapping("/{cartId}/items")
-  @Operation(summary = "Add a product to the cart")
   public ResponseEntity<CartItemDto> addToCart(@PathVariable UUID cartId,
       @RequestBody AddItemToCartRequest request) {
     CartItemDto cartItemDto = cartService.addToCart(cartId, request.getProductId());
@@ -45,13 +43,11 @@ public class CartController {
   }
 
   @GetMapping("/{cartId}")
-  @Operation(summary = "Get cart details by ID")
   public CartDto getCart(@PathVariable UUID cartId) {
     return cartService.getCart(cartId);
   }
 
   @PutMapping("/{cartId}/items/{productId}")
-  @Operation(summary = "Update quantity of a product in the cart")
   public CartItemDto updateItem(@PathVariable("cartId") UUID cartId,
       @PathVariable("productId") Long productId, @Valid @RequestBody UpdateCartItemRequest request) {
     return cartService.updateItem(cartId, productId, request.getQuantity());
