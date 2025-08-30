@@ -6,7 +6,7 @@ target/
 .env
 application.yaml
 application-*.yaml
-
+!application-example.yaml
 ### STS ###
 .apt_generated
 .classpath
